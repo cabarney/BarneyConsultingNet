@@ -1,0 +1,98 @@
+﻿.navbar-secondary li a {
+    display: block;
+    border-radius: 0;
+}
+.navbar-secondary li a:hover {
+    color: #fff;
+    background-color: darken(@gray-lighter, 10%);
+}
+
+
+.navbar-secondary .affix {
+    position: static;
+}
+
+
+.navbar-secondary{
+    .navbar;
+    margin-top: -@navbar-height;
+    border-bottom: solid 2px @gray-dark;
+    border-left: solid 2px @gray-dark;
+    border-right: solid 2px @gray-dark;
+    padding-left:0;
+    padding-right: 0;
+    position: fixed;
+    z-index: @zindex-navbar-fixed - 1;
+    left: 0;
+    right: 0;
+    border-radius: 0;
+    background-color: @body-bg;
+}
+
+.nav-sec-collapse {
+    .navbar-collapse;
+}
+
+.navbar-secondary-toggle {
+    .navbar-toggle;
+    margin-right: 15px;
+}
+
+.navbar-secondary .navbar-brand {
+
+    @navbar-services-padding-vertical: ((@navbar-height - @line-height-computed) / 2);
+    padding-bottom: @navbar-services-padding-vertical;
+    padding-top: @navbar-services-padding-vertical;
+    display: block;
+    margin-left: 15px;
+}
+
+
+@media screen and (min-width: @screen-tablet) {
+    .navbar-secondary {
+        max-width: @container-tablet;
+        margin-left: auto;
+        margin-right: auto;
+        .border-bottom-radius(5px);
+    }
+}
+
+@media screen and (min-width: @screen-desktop) {
+    .navbar-secondary {
+        margin-top: 0;
+        background-color: @body-bg;
+        position: static;
+        border: 0;
+    }
+
+        .navbar-secondary .navbar-brand {
+            display: none;
+        }
+
+    // Undo clearing to keep nav and brand horizontal
+    .nav-sec-collapse {
+        clear: none;
+    }
+
+    // Required to make the collapsing navbar work on regular desktops
+    .navbar-secondary-toggle {
+        position: relative;
+        top: auto;
+        left: auto;
+        display: none;
+    }
+
+    .nav-sec-collapse.collapse {
+        display: block !important;
+        height: auto !important;
+        padding-bottom: 0; // Override default setting
+        overflow: visible !important;
+    }
+
+    .navbar-secondary .affix {
+        position: fixed;
+    }
+
+
+}
+

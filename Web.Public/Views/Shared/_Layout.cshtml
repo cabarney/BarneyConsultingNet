@@ -1,0 +1,100 @@
+﻿@using System.Web.Optimization
+@using Web.Public.Helpers
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Barney Consulting, Inc.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Expert software development for your business or startup">
+        <meta name="author" content="Adam Barney">
+      
+        @Styles.Render("~/css")
+        
+        <!--[if lte IE 8 ]>
+            <link href="~/assets/lib/font-awesome/less/font-awesome-ie7.min.css" rel="stylesheet" />
+             <style>
+                .dropdown-menu .divider {display:none;}
+            </style>
+        <![endif]-->
+        <!--[if gte IE 7]><!-->
+        <link href="~/assets/lib/font-awesome/less/font-awesome.min.css" rel="stylesheet" />
+        <!--<![endif]-->
+
+    </head>
+    <body>
+        <!--[if lt IE 8]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+        
+        <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="@Url.Action("Index", "Home")"><img src="@Url.Content("~/assets/img/logo-wide.png")"/></a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        @Html.MenuLink("Home", "Index", "Home")
+                        <li class="dropdown @(Html.IsActive("", "services")?"active":"")">
+                            <a href="@Url.Action("Index", "Services")" class="dropdown-toggle" data-hover="dropdown">Services <i class="icon-angle-down"></i>
+                            </a>
+                            <ul class="dropdown-menu"  role="menu" >
+                                <li role="presentation">@Html.ActionLink("Staff Augmentation", "StaffAugmentation", "Services")</li>
+                                <li role="presentation">@Html.ActionLink("Web Application Development", "Web", "Services")</li>
+                                <li role="presentation">@Html.ActionLink("Mobile Development", "Mobile", "Services")</li>
+                                <li role="presentation">@Html.ActionLink("Windows Development", "Windows", "Services")</li>
+                                <li role="presentation">@Html.ActionLink("Cloud Development", "Cloud", "Services")</li>
+                                <li role="presentation">@Html.ActionLink("Startups", "Startups", "Services")</li>
+                                <li role="presentation">@Html.ActionLink("Training", "Training", "Services")</li>
+                                <li role="presentation">@Html.ActionLink("Server/Back-end Development", "Server", "Services")</li>
+                                <li role="presentation">@Html.ActionLink("And more...", "More", "Services")</li>
+                            </ul>
+                        </li>
+                        @Html.MenuLink("About", "About", "Home")
+                        @Html.MenuLink("Contact", "Index", "Contact")
+                    </ul>
+                          
+                </div><!-- /.navbar-collapse -->
+            </div>
+        </nav>
+
+
+
+
+        <div class="container body-content">
+            @RenderBody()
+                <hr/>
+
+                <footer>
+                    <p>&copy; Company 2013</p>
+                </footer>
+        </div> <!-- /container -->
+        
+        
+        <!--[if lte IE 8 ]>
+            <script src="~/assets/lib/jQuery/jquery-1.10.2.min.js"></script>
+        <![endif]-->
+        <!--[if gte IE 7]><!-->
+            <script src="~/assets/lib/jQuery/jquery-2.0.2.min.js"></script>
+        <!--<![endif]-->
+        
+        <script src="~/assets/lib/modernizr/modernizr-2.6.2.min.js"></script>
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="@Url.Content("~/assets/lib/html5shiv.js")"></script>
+            <script src="@Url.Content("~/assets/lib/respond.min.js")"></script>
+        <![endif]-->
+        
+        @Scripts.Render("~/bootstrap")
+        
+        @if (IsSectionDefined("scripts"))
+        {
+            @RenderSection("scripts", false)
+        }
+    </body>
+</html>
