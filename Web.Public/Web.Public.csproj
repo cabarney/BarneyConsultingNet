@@ -146,8 +146,9 @@
     <Content Include="assets\css\Site.min.css">
       <DependentUpon>site.less</DependentUpon>
     </Content>
-    <Content Include="assets\img\glyphicons-halflings-white.png" />
-    <Content Include="assets\img\glyphicons-halflings.png" />
+    <Content Include="assets\img\cloud.jpg" />
+    <Content Include="assets\img\jumbotron-bg.jpg" />
+    <Content Include="assets\img\jumbotron-logo.jpg" />
     <Content Include="assets\img\logo-wide.png" />
     <Content Include="assets\css\bootstrap.css">
       <DependentUpon>bootstrap.less</DependentUpon>
@@ -155,6 +156,17 @@
     <Content Include="assets\css\bootstrap.min.css">
       <DependentUpon>bootstrap.less</DependentUpon>
     </Content>
+    <Content Include="assets\img\mobile.jpg" />
+    <Content Include="assets\img\more.jpg" />
+    <Content Include="assets\img\server.jpg" />
+    <Content Include="assets\img\services.jpg" />
+    <Content Include="assets\img\staffaug.jpg" />
+    <Content Include="assets\img\startups.jpg" />
+    <Content Include="assets\img\training.jpg" />
+    <Content Include="assets\img\underconstruction.png" />
+    <Content Include="assets\img\web-mobile.jpg" />
+    <Content Include="assets\img\web.jpg" />
+    <Content Include="assets\img\windows.jpg" />
     <Content Include="assets\lib\bootstrap\css\mixins.css">
       <DependentUpon>mixins.less</DependentUpon>
     </Content>
@@ -288,6 +300,16 @@
     <Content Include="assets\lib\jQuery\jquery-2.0.2.min.js.map">
       <DependentUpon>jquery-2.0.2.js</DependentUpon>
     </Content>
+    <Content Include="Views\Services\StaffAugmentation.cshtml" />
+    <Content Include="Views\Services\Web.cshtml" />
+    <Content Include="Views\Services\Mobile.cshtml" />
+    <Content Include="Views\Services\Windows.cshtml" />
+    <Content Include="Views\Services\Cloud.cshtml" />
+    <Content Include="Views\Services\Startups.cshtml" />
+    <Content Include="Views\Services\Training.cshtml" />
+    <Content Include="Views\Services\Server.cshtml" />
+    <Content Include="Views\Services\More.cshtml" />
+    <Content Include="Views\Shared\_ServicesMenu.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

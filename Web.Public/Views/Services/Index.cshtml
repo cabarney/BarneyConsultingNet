@@ -2,152 +2,118 @@
 @{
     ViewBag.Title = "Index";
 }
+@section jumbotron
+{
+    <div class="row">
+        <div class="col-md-5">
+            <img class="img-thumbnail" src="@Url.Content("~/assets/img/services.jpg")" alt="Barney Consulting Services" />
+        </div>
+        <div class="col-md-7">
+            <h1>Services</h1>
+            <p>In my 15+ years of professional software development experience, I&#39;ve basically done it all.  Take a look at what I can offer, and let&#30;s get to work on your project.</p>
+            <p><a class="btn btn-success btn-lg" href="@Url.Action("Index", "Services")">Contact Me to get Started</a></p>
+        </div>
+    </div>
+}
 <div class="row">
-    @*<div class="col-xs-12 col-sm-12 col-md-3">*@
-    <div class="col-md-3">
-        
-
-                <div class="services-menu" data-spy="affix">
-                    <ul class="nav nav-pills nav-stacked">
-                        <li><a href="#item1">Staff Augmentation</a></li>
-                        <li><a href="#item2">Web Application Development</a></li>
-                        <li><a href="#item3">Mobile Development</a></li>
-                        <li><a href="#item4">Windows Development</a></li>
-                        <li><a href="#item5">Cloud Development</a></li>
-                        <li><a href="#item6">Startups</a></li>
-                        <li><a href="#item7">Training</a></li>
-                        <li><a href="#item8">Server/Back-end Development</a></li>
-                        <li><a href="#item9">And more...</a></li>
-                    </ul>
-                </div><!--/.nav-collapse -->
-            
-                    
+    <div class="col-md-4">
+        <div class="thumbnail">
+            <img src="~/assets/img/staffaug.jpg" />
+            <div class="caption">
+                <h2>Staff Augmentation</h2>
+                <p>Finding a developer is harder than ever.  Finding a really <em>good</em> developer is next to impossible.  I am a senior-level developer, architect and Microsoft C# MVP with a history of shipping working code and meeting deadlines.</p>
+                <p><a class="btn btn-primary" href="~/Services/StaffAugmentation">Learn More &raquo;</a></p>
+            </div>
+        </div>
 
     </div>
-
-    <div class="col-md-9"> <!--<div class="col-sm-12 col-md-9">-->
-        <div class="jumbotron">
-            <h1>Barney Consulting, Inc.</h1>
-            <p>Expert software development for your business or startup.  Whether your project is big or small, new or legacy, web or desktop, I have the skillset to help you get it finished.</p>
-            <p><a class="btn btn-primary btn-large" href ="@Url.Action("Index", "Services")">Learn more</a></p>
+    <div class="col-md-4">
+        <div class="thumbnail">
+            <img src="~/assets/img/web.jpg" />
+            <div class="caption">
+                <h2>Web Development</h2>
+                <p>It&#39;s not enough to just be on the web anymore - you need to stand out from your competition.  This means being mobile-friendly, using responsive web design and reaching your customers where the are on the internet. Barney Consulting can help.</p>
+                <p><a class="btn btn-primary" href="~/Services/Web">Learn More &raquo;</a></p>
+            </div>
         </div>
-        <div class="scrolling-content-with-anchors">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h3><span id="item1"></span>Staff Aug</h3>
-                </div>
-                <div class="col-lg-3">
-                    <img src="http://placehold.it/320x200/f00/fff" alt="" class="img-responsive" />
-                </div>
-                <div class="col-lg-9">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel sapien elit in malesuada semper mi, id sollicitudin urna fermentum ut fusce varius nisl ac ipsum gravida vel pretium tellus tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante fusce non varius purus aenean nec magna felis fusce vestibulum.
-                    </p>
-                </div>
+    </div>
+    <div class="col-md-4">
+        <div class="thumbnail">
+            <img src="~/assets/img/mobile.jpg" />
+            <div class="caption">
+                <h2>Mobile Development</h2>
+                <p>Mobile device use is at an all-time high, and it&#39;s not slowing down. And what do smartphone users want on their phones? Apps. How do you target all smartphone users without a maintenance nightmare?  Cross-platform development.</p>
+                <p><a class="btn btn-primary" href="~/Services/Mobile">Learn More &raquo;</a></p>
             </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <h3><span id="item2"></span>Web</h3>
-                </div>
-                <div class="col-lg-3">
-                    <img src="http://placehold.it/320x200/f00/fff" alt="" class="img-responsive" />
-                </div>
-                <div class="col-lg-9">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel sapien elit in malesuada semper mi, id sollicitudin urna fermentum ut fusce varius nisl ac ipsum gravida vel pretium tellus tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante fusce non varius purus aenean nec magna felis fusce vestibulum.
-                    </p>
-                </div>
+        </div>
+
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <div class="thumbnail">
+            <img src="~/assets/img/windows.jpg" />
+            <div class="caption">
+                <h2>Windows Development</h2>
+                <p>While in most cases it is advisable to approach new development in a web-centric way, there are always exceptions, especially when dealing with legacy applications. I have significant experience with windows application development.</p>
+                <p><a class="btn btn-primary" href="~/Services/Windows">Learn More &raquo;</a></p>
             </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <h3><span id="item3"></span>Mobile</h3>
-                </div>
-                <div class="col-lg-3">
-                    <img src="http://placehold.it/320x200/f00/fff" alt="" class="img-responsive" />
-                </div>
-                <div class="col-lg-9">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel sapien elit in malesuada semper mi, id sollicitudin urna fermentum ut fusce varius nisl ac ipsum gravida vel pretium tellus tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante fusce non varius purus aenean nec magna felis fusce vestibulum.
-                    </p>
-                </div>
+        </div>
+
+    </div>
+    <div class="col-md-4">
+        <div class="thumbnail">
+            <img src="~/assets/img/cloud.jpg" />
+            <div class="caption">
+                <h2>Cloud Development</h2>
+                <p>Deciding to be on the web is a no-brainer.  But where do you host your web application? Are you ready to scale your application to meet demand? Take your web presence to the cloud!  Barney Consulting can help you move to Windows Azure.</p>
+                <p><a class="btn btn-primary" href="~/Services/Cloud">Learn More &raquo;</a></p>
             </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <h3><span id="item4"></span>Windows</h3>
-                </div>
-                <div class="col-lg-3">
-                    <img src="http://placehold.it/320x200/f00/fff" alt="" class="img-responsive" />
-                </div>
-                <div class="col-lg-9">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel sapien elit in malesuada semper mi, id sollicitudin urna fermentum ut fusce varius nisl ac ipsum gravida vel pretium tellus tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante fusce non varius purus aenean nec magna felis fusce vestibulum.
-                    </p>
-                </div>
+        </div>
+
+    </div>
+    <div class="col-md-4">
+        <div class="thumbnail">
+            <img src="~/assets/img/startups.jpg" />
+            <div class="caption">
+                <h2>Startups</h2>
+                <p>We all have that next great idea - the one that wil make us <em>millions</em>. So why do 90% of tech startups fail? To be successful, you need working software and a good marketing strategy (among other things). I&#39;ve got the software handled. Let&#39;s talk.</p>
+                <p><a class="btn btn-primary" href="~/Services/Startups">Learn More &raquo;</a></p>
             </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <h3><span id="item5"></span>Cloud</h3>
-                </div>
-                <div class="col-lg-3">
-                    <img src="http://placehold.it/320x200/f00/fff" alt="" class="img-responsive" />
-                </div>
-                <div class="col-lg-9">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel sapien elit in malesuada semper mi, id sollicitudin urna fermentum ut fusce varius nisl ac ipsum gravida vel pretium tellus tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante fusce non varius purus aenean nec magna felis fusce vestibulum.
-                    </p>
-                </div>
+        </div>
+
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <div class="thumbnail">
+            <img src="~/assets/img/training.jpg" />
+            <div class="caption">
+                <h2>Training</h2>
+                <p>It&#39;s hard to keep up with the latest technologies. Things change so quickly. How can you or your employees keep up?  Your best developers<em>love</em> learning new things, so why not keep them happy by providing some paid training for them?</p>
+                <p><a class="btn btn-primary" href="~/Services/Training">Learn More &raquo;</a></p>
             </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <h3><span id="item6"></span>Startups</h3>
-                </div>
-                <div class="col-lg-3">
-                    <img src="http://placehold.it/320x200/f00/fff" alt="" class="img-responsive" />
-                </div>
-                <div class="col-lg-9">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel sapien elit in malesuada semper mi, id sollicitudin urna fermentum ut fusce varius nisl ac ipsum gravida vel pretium tellus tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante fusce non varius purus aenean nec magna felis fusce vestibulum.
-                    </p>
-                </div>
+        </div>
+
+    </div>
+    <div class="col-md-4">
+        <div class="thumbnail">
+            <img src="~/assets/img/server.jpg" />
+            <div class="caption">
+                <h2>Server / Back-End</h2>
+                <p>At the heart of any good, scalable solution are well-architected, solid back-end and middleware services.  Most developers aren&#39;t thrilled about working on this code - it&#39;s not sexy.  But this is the lifeblood of your application. Get it done right.</p>
+                <p><a class="btn btn-primary" href="~/Services/Server">Learn More &raquo;</a></p>
             </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <h3><span id="item7"></span>Training</h3>
-                </div>
-                <div class="col-lg-3">
-                    <img src="http://placehold.it/320x200/f00/fff" alt="" class="img-responsive" />
-                </div>
-                <div class="col-lg-9">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel sapien elit in malesuada semper mi, id sollicitudin urna fermentum ut fusce varius nisl ac ipsum gravida vel pretium tellus tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante fusce non varius purus aenean nec magna felis fusce vestibulum.
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <h3><span id="item8"></span>Server</h3>
-                </div>
-                <div class="col-lg-3">
-                    <img src="http://placehold.it/320x200/f00/fff" alt="" class="img-responsive" />
-                </div>
-                <div class="col-lg-9">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel sapien elit in malesuada semper mi, id sollicitudin urna fermentum ut fusce varius nisl ac ipsum gravida vel pretium tellus tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante fusce non varius purus aenean nec magna felis fusce vestibulum.
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <h3><span id="item9"></span>More</h3>
-                </div>
-                <div class="col-lg-3">
-                    <img src="http://placehold.it/320x200/f00/fff" alt="" class="img-responsive" />
-                </div>
-                <div class="col-lg-9">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel sapien elit in malesuada semper mi, id sollicitudin urna fermentum ut fusce varius nisl ac ipsum gravida vel pretium tellus tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante fusce non varius purus aenean nec magna felis fusce vestibulum.
-                    </p>
-                </div>
+        </div>
+
+    </div>
+    <div class="col-md-4">
+        <div class="thumbnail">
+            <img src="~/assets/img/more.jpg" />
+            <div class="caption">
+                <h2>And More...</h2>
+                <p>My depth of experience and understanding of fundamental programming and logic constructs puts me in a position to do just about anything. Don&#39;t see what you&#39;re looking for on this page? Contact me anyway and we can discuss your needs.</p>
+                <p><a class="btn btn-primary" href="~/Services/More">Learn More &raquo;</a></p>
             </div>
         </div>
 
@@ -155,18 +121,4 @@
 </div>
 
 
-@section scripts
-{
-    <script type="text/javascript">
-        $(function() {
-            var $body = $(document.body);
-            var navHeight = $('.navbar').outerHeight(true) + 10;
-            $body.scrollspy({
-                target: '.services-menu',
-                //offset: navHeight
-            });
-        });
 
-    </script>
-    
-}

@@ -1,4 +1,5 @@
-﻿@using System.Web.Optimization
+﻿@using System.Activities.Statements
+@using System.Web.Optimization
 @using Web.Public.Helpers
 <!DOCTYPE html>
 <html lang="en">
@@ -9,17 +10,12 @@
         <meta name="description" content="Expert software development for your business or startup">
         <meta name="author" content="Adam Barney">
       
-        @Styles.Render("~/css")
-        
-        <!--[if lte IE 8 ]>
-            <link href="~/assets/lib/font-awesome/less/font-awesome-ie7.min.css" rel="stylesheet" />
-             <style>
-                .dropdown-menu .divider {display:none;}
-            </style>
-        <![endif]-->
-        <!--[if gte IE 7]><!-->
-        <link href="~/assets/lib/font-awesome/less/font-awesome.min.css" rel="stylesheet" />
-        <!--<![endif]-->
+        @Styles.Render("~/assets/css/all")
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+      <script src="~/assets/lib/html5shiv.js"></script>
+      <script src="~/assets/lib/respond.min.js"></script>
+    <![endif]-->
 
     </head>
     <body>
@@ -61,17 +57,34 @@
                 </div><!-- /.navbar-collapse -->
             </div>
         </nav>
+        
+        @if (IsSectionDefined("jumbotron"))
+    {
+            <div class="jumbotron">
+                <div class="container">
+                    @RenderSection("jumbotron")
+                </div>
+            </div>
+    }
 
-
-
-
-        <div class="container body-content">
+        <div class="container">
             @RenderBody()
-                <hr/>
-
-                <footer>
-                    <p>&copy; Company 2013</p>
-                </footer>
+            <footer>
+                <div class="row">
+                    <div class="col-sm-4">&copy; Barney Consulting, Inc. 2013@(DateTime.Now.Year > 2013 ? "- " + DateTime.Now.Year : "")
+                    </div>
+                    <div class="col-sm-4 text-center">
+                        @Html.ActionLink("Home", "Index", "Home") |
+                        @Html.ActionLink("Service", "Index", "Services") |
+                        @Html.ActionLink("About", "About", "Home") |
+                        @Html.ActionLink("Contact", "index", "Contact")
+                    </div>
+                    <div class="col-sm-4 text-right">
+                        <a href="tel:&#52;&#48;&#50;&#46;&#55;&#55;&#48;&#46;&#50;&#52;&#49;&#54;" class="reverse">6142.077.204</a> |
+                        <a href="mailto:&#97;&#100;&#97;&#109;&#64;&#97;&#100;&#97;&#109;&#98;&#97;&#114;&#110;&#101;&#121;&#46;&#99;&#111;&#109;"><span class="reverse">moc.yenrabmada@mada</span></a>
+                    </div>
+                </div>
+            </footer>
         </div> <!-- /container -->
         
         
@@ -82,18 +95,11 @@
             <script src="~/assets/lib/jQuery/jquery-2.0.2.min.js"></script>
         <!--<![endif]-->
         
-        <script src="~/assets/lib/modernizr/modernizr-2.6.2.min.js"></script>
-
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-            <script src="@Url.Content("~/assets/lib/html5shiv.js")"></script>
-            <script src="@Url.Content("~/assets/lib/respond.min.js")"></script>
-        <![endif]-->
         
-        @Scripts.Render("~/bootstrap")
+        @Scripts.Render("~/bundles/bootstrap")
         
         @if (IsSectionDefined("scripts"))
-        {
+         {
             @RenderSection("scripts", false)
         }
     </body>

@@ -48,7 +48,8 @@ namespace Web.Public.Controllers
             return View();
         }
 
-        public ActionResult Server()
+        [ActionName("Server")]
+        public ActionResult ServerAndBackEnd()
         {
             return View();
         }

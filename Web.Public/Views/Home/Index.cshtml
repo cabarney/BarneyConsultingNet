@@ -2,28 +2,52 @@
     ViewBag.Title = "Bootstrap";
 }
 
-    <div class="jumbotron">
-        <h1>Barney Consulting, Inc.</h1>
-        <p>Expert software development for your business or startup.  Whether your project is big or small, new or legacy, web or desktop, I have the skillset to help you get it finished.</p>
-        <p><a class="btn btn-primary btn-large" href ="@Url.Action("Index", "Services")">Learn more</a></p>
+@section jumbotron
+{
+    <div class="row">
+        <div class="col-md-5">
+            <img class="img-thumbnail" src="@Url.Content("~/assets/img/jumbotron-logo.jpg")" alt="Barney Consulting" />
+        </div>
+        <div class="col-md-7">
+            <h1>Barney Consulting</h1>
+            <p>Expert software development for your business or startup.  Whether your project is big or small, new or legacy, web or desktop, I have the skillset to help you get it finished.</p>
+            <p><a class="btn btn-success btn-lg" href="@Url.Action("Index", "Services")">See what services I can offer</a></p>
+        </div>
     </div>
+}
 
-<!-- Example row of columns -->
 <div class="row">
-    <div class="col-lg-4">
-        <h2>Heading</h2>
-        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-        <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
+
+    <div class="col-md-4">
+        <div class="thumbnail">
+            <img src="~/assets/img/web.jpg" />
+            <div class="caption">
+                <h2>Web Development</h2>
+                <p>It&#39;s not enough to just be on the web anymore - you need to stand out from your competition.  This means being mobile-friendly, using responsive web design and reaching your customers where the are on the internet. Barney Consulting can help.</p>
+                <p><a class="btn btn-primary" href="~/Services/Web">Learn More &raquo;</a></p>
+            </div>
+        </div>
     </div>
-    <div class="col-lg-4">
-        <h2>Heading</h2>
-        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-        <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
+    <div class="col-md-4">
+        <div class="thumbnail">
+            <img src="~/assets/img/startups.jpg" />
+            <div class="caption">
+                <h2>Startups</h2>
+
+                <p>We all have that next great idea - the one that wil make us <em>millions</em>. So why do 90% of tech startups fail? To be successful, you need working software and a good marketing strategy (among other things). I&#39;ve got the software handled. Let&#39;s talk.</p>
+                <p><a class="btn btn-primary" href="~/Services/Startups">Learn More &raquo;</a></p>
+            </div>
+        </div>
     </div>
-    <div class="col-lg-4">
-        <h2>Heading</h2>
-        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
+    <div class="col-md-4">
+        <div class="thumbnail">
+            <img src="~/assets/img/training.jpg" />
+            <div class="caption">
+                <h2>Training</h2>
+                <p>It&#39;s hard to keep up with the latest technologies. Things change so quickly. How can you or your employees keep up?  Your best developers<em>love</em> learning new things, so why not keep them happy by providing some paid training for them?</p>
+                <p><a class="btn btn-primary" href="~/Services/Training">Learn More &raquo;</a></p>
+            </div>
+        </div>
     </div>
 </div>
 
