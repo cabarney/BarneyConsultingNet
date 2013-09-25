@@ -1,0 +1,5 @@
+NameError: variable @zindex-modal-background is undefined in /Users/adam/Development/projects/BarneyConsulting/BarneyConsultingNet/Web.Public/assets/lib/bootstrap/css/modals.less on line 33, column 12:
+32   left: 0;
+33   z-index: @zindex-modal-background;
+34 
+

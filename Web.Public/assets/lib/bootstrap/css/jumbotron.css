@@ -1,0 +1,5 @@
+NameError: variable @jumbotron-padding is undefined in /Users/adam/Development/projects/BarneyConsulting/BarneyConsultingNet/Web.Public/assets/lib/bootstrap/css/jumbotron.less on line 7, column 12:
+6 .jumbotron {
+7   padding: @jumbotron-padding;
+8   margin-bottom: @jumbotron-padding;
+

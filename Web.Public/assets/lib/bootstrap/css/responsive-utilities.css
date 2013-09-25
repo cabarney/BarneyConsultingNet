@@ -1,0 +1,5 @@
+NameError: .responsive-invisibility is undefined in /Users/adam/Development/projects/BarneyConsulting/BarneyConsultingNet/Web.Public/assets/lib/bootstrap/css/responsive-utilities.less on line 39, column 3:
+38 .visible-xs {
+39   .responsive-invisibility();
+40   @media (max-width: @screen-xs-max) {
+

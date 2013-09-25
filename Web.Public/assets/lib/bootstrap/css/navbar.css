@@ -1,0 +1,5 @@
+NameError: .clearfix is undefined in /Users/adam/Development/projects/BarneyConsulting/BarneyConsultingNet/Web.Public/assets/lib/bootstrap/css/navbar.less on line 19, column 3:
+18   // Prevent floats from breaking the navbar
+19   .clearfix();
+20 
+

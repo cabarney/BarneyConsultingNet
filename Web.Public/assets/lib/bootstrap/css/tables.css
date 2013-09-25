@@ -1,0 +1,5 @@
+NameError: variable @state-success-bg is undefined in /Users/adam/Development/projects/BarneyConsulting/BarneyConsultingNet/Web.Public/assets/lib/bootstrap/css/tables.less on line 172, column 29:
+171 // Generate the contextual variants
+172 .table-row-variant(success; @state-success-bg; @state-success-border);
+173 .table-row-variant(danger; @state-danger-bg; @state-danger-border);
+

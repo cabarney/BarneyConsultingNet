@@ -1,0 +1,5 @@
+NameError: .img-thumbnail is undefined in /Users/adam/Development/projects/BarneyConsulting/BarneyConsultingNet/Web.Public/assets/lib/bootstrap/css/thumbnails.less on line 8, column 3:
+7 .thumbnail {
+8   .img-thumbnail();
+9   display: block; // Override the inline-block from `.img-thumbnail`
+

@@ -1,0 +1,5 @@
+NameError: .container-fixed is undefined in /Users/adam/Development/projects/BarneyConsulting/BarneyConsultingNet/Web.Public/assets/lib/bootstrap/css/grid.less on line 8, column 3:
+7 .container {
+8   .container-fixed();
+9 }
+
