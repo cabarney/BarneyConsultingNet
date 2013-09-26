@@ -186,25 +186,6 @@
     <Content Include="assets\lib\bootstrap\js\tab.js" />
     <Content Include="assets\lib\bootstrap\js\tooltip.js" />
     <Content Include="assets\lib\bootstrap\js\transition.js" />
-    <Content Include="assets\lib\font-awesome\less\font-awesome-ie7.css">
-      <DependentUpon>font-awesome-ie7.less</DependentUpon>
-    </Content>
-    <Content Include="assets\lib\font-awesome\less\font-awesome-ie7.min.css">
-      <DependentUpon>font-awesome-ie7.less</DependentUpon>
-    </Content>
-    <Content Include="assets\lib\font-awesome\less\font-awesome.css">
-      <DependentUpon>font-awesome.less</DependentUpon>
-    </Content>
-    <Content Include="assets\lib\font-awesome\less\font-awesome.min.css">
-      <DependentUpon>font-awesome.less</DependentUpon>
-    </Content>
-    <Content Include="assets\lib\font-awesome\font\fontawesome-webfont.svg" />
-    <Content Include="assets\lib\font-awesome\less\variables.css">
-      <DependentUpon>variables.less</DependentUpon>
-    </Content>
-    <Content Include="assets\lib\font-awesome\less\variables.min.css">
-      <DependentUpon>variables.less</DependentUpon>
-    </Content>
     <Content Include="assets\lib\html5shiv.js" />
     <Content Include="assets\lib\jQuery\jquery-1.10.2.min.js">
       <DependentUpon>jquery-1.10.2.js</DependentUpon>
@@ -253,19 +234,6 @@
     <Content Include="assets\lib\bootstrap\css\utilities.less" />
     <Content Include="assets\css\variables.less" />
     <Content Include="assets\lib\bootstrap\css\wells.less" />
-    <Content Include="assets\lib\font-awesome\font\fontawesome-webfont.eot" />
-    <Content Include="assets\lib\font-awesome\font\fontawesome-webfont.ttf" />
-    <Content Include="assets\lib\font-awesome\font\fontawesome-webfont.woff" />
-    <Content Include="assets\lib\font-awesome\font\FontAwesome.otf" />
-    <Content Include="assets\lib\font-awesome\less\bootstrap.less" />
-    <Content Include="assets\lib\font-awesome\less\core.less" />
-    <Content Include="assets\lib\font-awesome\less\extras.less" />
-    <Content Include="assets\lib\font-awesome\less\font-awesome-ie7.less" />
-    <Content Include="assets\lib\font-awesome\less\font-awesome.less" />
-    <Content Include="assets\lib\font-awesome\less\icons.less" />
-    <Content Include="assets\lib\font-awesome\less\mixins.less" />
-    <Content Include="assets\lib\font-awesome\less\path.less" />
-    <Content Include="assets\lib\font-awesome\less\variables.less" />
     <Content Include="assets\css\site.less" />
     <Content Include="assets\lib\jQuery\jquery-1.10.2.js" />
     <Content Include="assets\lib\jQuery\jquery-1.10.2.min.js.map">
@@ -345,6 +313,9 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
+  <PropertyGroup>
+    <PreBuildEvent>del $(ProjectDir)obj\* /F /S /Q</PreBuildEvent>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
