@@ -167,12 +167,12 @@
     <Content Include="assets\img\web-mobile.jpg" />
     <Content Include="assets\img\web.jpg" />
     <Content Include="assets\img\windows.jpg" />
-    <Content Include="assets\css\variables.css">
+    <None Include="assets\css\variables.css">
       <DependentUpon>variables.less</DependentUpon>
-    </Content>
-    <Content Include="assets\css\variables.min.css">
+    </None>
+    <None Include="assets\css\variables.min.css">
       <DependentUpon>variables.less</DependentUpon>
-    </Content>
+    </None>
     <Content Include="assets\lib\bootstrap\js\affix.js" />
     <Content Include="assets\lib\bootstrap\js\alert.js" />
     <Content Include="assets\lib\bootstrap\js\button.js" />
@@ -196,50 +196,50 @@
     </Content>
     <Content Include="assets\lib\respond.min.js" />
     <Content Include="Global.asax" />
-    <Content Include="assets\lib\bootstrap\css\alerts.less" />
-    <Content Include="assets\lib\bootstrap\css\badges.less" />
-    <Content Include="assets\css\bootstrap.less" />
-    <Content Include="assets\lib\bootstrap\css\breadcrumbs.less" />
-    <Content Include="assets\lib\bootstrap\css\button-groups.less" />
-    <Content Include="assets\lib\bootstrap\css\buttons.less" />
-    <Content Include="assets\lib\bootstrap\css\carousel.less" />
-    <Content Include="assets\lib\bootstrap\css\close.less" />
-    <Content Include="assets\lib\bootstrap\css\code.less" />
-    <Content Include="assets\lib\bootstrap\css\component-animations.less" />
-    <Content Include="assets\lib\bootstrap\css\dropdowns.less" />
-    <Content Include="assets\lib\bootstrap\css\forms.less" />
-    <Content Include="assets\lib\bootstrap\css\grid.less" />
-    <Content Include="assets\lib\bootstrap\css\input-groups.less" />
-    <Content Include="assets\lib\bootstrap\css\jumbotron.less" />
-    <Content Include="assets\lib\bootstrap\css\labels.less" />
-    <Content Include="assets\lib\bootstrap\css\list-group.less" />
-    <Content Include="assets\lib\bootstrap\css\media.less" />
-    <Content Include="assets\lib\bootstrap\css\mixins.less" />
-    <Content Include="assets\lib\bootstrap\css\modals.less" />
-    <Content Include="assets\lib\bootstrap\css\navbar.less" />
-    <Content Include="assets\lib\bootstrap\css\navs.less" />
-    <Content Include="assets\lib\bootstrap\css\normalize.less" />
-    <Content Include="assets\lib\bootstrap\css\pager.less" />
-    <Content Include="assets\lib\bootstrap\css\pagination.less" />
-    <Content Include="assets\lib\bootstrap\css\panels.less" />
-    <Content Include="assets\lib\bootstrap\css\popovers.less" />
-    <Content Include="assets\lib\bootstrap\css\print.less" />
-    <Content Include="assets\lib\bootstrap\css\progress-bars.less" />
-    <Content Include="assets\lib\bootstrap\css\responsive-utilities.less" />
-    <Content Include="assets\lib\bootstrap\css\scaffolding.less" />
-    <Content Include="assets\lib\bootstrap\css\tables.less" />
-    <Content Include="assets\lib\bootstrap\css\thumbnails.less" />
-    <Content Include="assets\lib\bootstrap\css\tooltip.less" />
-    <Content Include="assets\lib\bootstrap\css\type.less" />
-    <Content Include="assets\lib\bootstrap\css\utilities.less" />
-    <Content Include="assets\css\variables.less" />
-    <Content Include="assets\lib\bootstrap\css\wells.less" />
-    <Content Include="assets\css\site.less" />
+    <None Include="assets\lib\bootstrap\css\alerts.less" />
+    <None Include="assets\lib\bootstrap\css\badges.less" />
+    <None Include="assets\css\bootstrap.less" />
+    <None Include="assets\lib\bootstrap\css\breadcrumbs.less" />
+    <None Include="assets\lib\bootstrap\css\button-groups.less" />
+    <None Include="assets\lib\bootstrap\css\buttons.less" />
+    <None Include="assets\lib\bootstrap\css\carousel.less" />
+    <None Include="assets\lib\bootstrap\css\close.less" />
+    <None Include="assets\lib\bootstrap\css\code.less" />
+    <None Include="assets\lib\bootstrap\css\component-animations.less" />
+    <None Include="assets\lib\bootstrap\css\dropdowns.less" />
+    <None Include="assets\lib\bootstrap\css\forms.less" />
+    <None Include="assets\lib\bootstrap\css\grid.less" />
+    <None Include="assets\lib\bootstrap\css\input-groups.less" />
+    <None Include="assets\lib\bootstrap\css\jumbotron.less" />
+    <None Include="assets\lib\bootstrap\css\labels.less" />
+    <None Include="assets\lib\bootstrap\css\list-group.less" />
+    <None Include="assets\lib\bootstrap\css\media.less" />
+    <None Include="assets\lib\bootstrap\css\mixins.less" />
+    <None Include="assets\lib\bootstrap\css\modals.less" />
+    <None Include="assets\lib\bootstrap\css\navbar.less" />
+    <None Include="assets\lib\bootstrap\css\navs.less" />
+    <None Include="assets\lib\bootstrap\css\normalize.less" />
+    <None Include="assets\lib\bootstrap\css\pager.less" />
+    <None Include="assets\lib\bootstrap\css\pagination.less" />
+    <None Include="assets\lib\bootstrap\css\panels.less" />
+    <None Include="assets\lib\bootstrap\css\popovers.less" />
+    <None Include="assets\lib\bootstrap\css\print.less" />
+    <None Include="assets\lib\bootstrap\css\progress-bars.less" />
+    <None Include="assets\lib\bootstrap\css\responsive-utilities.less" />
+    <None Include="assets\lib\bootstrap\css\scaffolding.less" />
+    <None Include="assets\lib\bootstrap\css\tables.less" />
+    <None Include="assets\lib\bootstrap\css\thumbnails.less" />
+    <None Include="assets\lib\bootstrap\css\tooltip.less" />
+    <None Include="assets\lib\bootstrap\css\type.less" />
+    <None Include="assets\lib\bootstrap\css\utilities.less" />
+    <None Include="assets\css\variables.less" />
+    <None Include="assets\lib\bootstrap\css\wells.less" />
+    <None Include="assets\css\site.less" />
     <Content Include="assets\lib\jQuery\jquery-1.10.2.js" />
     <Content Include="assets\lib\jQuery\jquery-1.10.2.min.js.map">
       <DependentUpon>jquery-1.10.2.js</DependentUpon>
     </Content>
-    <Content Include="assets\css\navbar-secondary.less" />
+    <None Include="assets\css\navbar-secondary.less" />
     <None Include="assets\lib\jQuery\jquery-2.0.2.intellisense.js" />
     <Content Include="Views\Services\Index.cshtml" />
     <Content Include="assets\lib\jQuery\jquery-2.0.2.js" />
