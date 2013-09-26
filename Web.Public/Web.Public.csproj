@@ -167,12 +167,6 @@
     <Content Include="assets\img\web-mobile.jpg" />
     <Content Include="assets\img\web.jpg" />
     <Content Include="assets\img\windows.jpg" />
-    <Content Include="assets\lib\bootstrap\css\mixins.css">
-      <DependentUpon>mixins.less</DependentUpon>
-    </Content>
-    <Content Include="assets\lib\bootstrap\css\mixins.min.css">
-      <DependentUpon>mixins.less</DependentUpon>
-    </Content>
     <Content Include="assets\css\variables.css">
       <DependentUpon>variables.less</DependentUpon>
     </Content>
@@ -310,6 +304,10 @@
     <Content Include="Views\Services\Server.cshtml" />
     <Content Include="Views\Services\More.cshtml" />
     <Content Include="Views\Shared\_ServicesMenu.cshtml" />
+    <None Include="Properties\PublishProfiles\barneyconsulting - FTP %282%29.pubxml" />
+    <None Include="Properties\PublishProfiles\barneyconsulting - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\barneyconsulting - Web Deploy %282%29.pubxml" />
+    <None Include="Properties\PublishProfiles\barneyconsulting - Web Deploy.pubxml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

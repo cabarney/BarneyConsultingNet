@@ -36,9 +36,12 @@
                     <ul class="nav navbar-nav">
                         @Html.MenuLink("Home", "Index", "Home")
                         <li class="dropdown @(Html.IsActive("", "services")?"active":"")">
-                            <a href="@Url.Action("Index", "Services")" class="dropdown-toggle" data-hover="dropdown">Services <i class="icon-angle-down"></i>
-                            </a>
-                            <ul class="dropdown-menu"  role="menu" >
+                            <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown" onclick="return false;">Services <i class="icon-angle-down"></i></a>
+                            <ul class="dropdown-menu" role="menu">
+                                @if (!Html.IsActive("index", "services"))
+                                {
+                                    <li><a href="@Url.Action("Index", "Services")">Summary of Services</a></li>
+                                }
                                 <li role="presentation">@Html.ActionLink("Staff Augmentation", "StaffAugmentation", "Services")</li>
                                 <li role="presentation">@Html.ActionLink("Web Application Development", "Web", "Services")</li>
                                 <li role="presentation">@Html.ActionLink("Mobile Development", "Mobile", "Services")</li>

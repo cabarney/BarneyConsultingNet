@@ -1,5 +1,9 @@
 ﻿@using Web.Public.Helpers
 <ul class="nav nav-pills nav-stacked hidden-sm hidden-xs">
+    @if (!Html.IsActive("index", "services"))
+    {
+        <li><a href="@Url.Action("Index", "Services")">Summary of Services</a></li>
+    }
     <li @Html.MenuLink("Staff Augmentation", "StaffAugmentation", "Services")</li>
     <li>@Html.MenuLink("Web Application Development", "Web", "Services")</li>
     <li>@Html.MenuLink("Mobile Development", "Mobile", "Services")</li>
