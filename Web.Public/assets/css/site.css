@@ -82,8 +82,6 @@ footer {
   color: #949699;
   padding: 10px 20px;
   margin-top: 30px;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
 }
 footer p {
   text-align: center;
@@ -92,6 +90,17 @@ footer p {
 footer .reverse {
   unicode-bidi: bidi-override;
   direction: rtl;
+}
+footer div .text-left .text-center .text-right {
+  text-align: center;
+}
+@media screen and (min-width: 992px) {
+  .text-left {
+    text-align: left;
+  }
+  .text-right {
+    text-align: right;
+  }
 }
 .navbar-inverse .navbar-nav > li {
   color: #949699;
