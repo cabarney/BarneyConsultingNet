@@ -2,10 +2,18 @@
     ViewBag.Title = "About Barney Consulting";
 }
 
-
-<div class="page-header">
-    <h1>About Barney Consulting</h1>
-</div>
+@section jumbotron
+{
+    <div class="row">
+        <div class="col-md-5">
+            <img class="img-thumbnail" src="@Url.Content("~/assets/img/jumbotron-logo.jpg")" alt="Barney Consulting" />
+        </div>
+        <div class="col-md-7">
+            <h1>About Barney Consulting</h1>
+            <p></p>
+        </div>
+    </div>
+}
 
 <div class="row">
 <p>Barney Consulting was started in mid-2013 by <a href="http://adambarney.com">Adam Barney</a>.  

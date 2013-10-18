@@ -9,11 +9,15 @@
   -webkit-text-shadow: -4px 4px 5px rgba(0, 0, 0, 0.5);
   text-shadow: -4px 4px 5px rgba(0, 0, 0, 0.5);
 }
+.jumbotron a {
+  color: #c7cc14;
+}
 .jumbotron a.btn {
   -webkit-text-shadow: none;
   text-shadow: none;
   -webkit-box-shadow: -4px 4px 5px rgba(0, 0, 0, 0.5);
   box-shadow: -4px 4px 5px rgba(0, 0, 0, 0.5);
+  color: #ffffff;
 }
 .jumbotron a.btn:hover {
   -webkit-box-shadow: -6px 6px 10px rgba(0, 0, 0, 0.7);
@@ -33,29 +37,11 @@
   margin: 0px auto;
   max-width: 550px;
 }
-.services-menu {
-  display: none;
-  position: fixed;
-}
-.scrolling-content-with-anchors h3 {
-  position: relative;
-}
-.scrolling-content-with-anchors h3 span {
-  position: absolute;
-  top: -50px;
-}
 @media screen and (min-width: 992px) {
   .body-content {
     margin-top: 20px;
     padding-right: 15px;
     padding-left: 15px;
-  }
-  .scrolling-content-with-anchors h3 span {
-    position: absolute;
-    top: -70px;
-  }
-  .services-menu {
-    display: block;
   }
 }
 .jumbotron .row {
@@ -77,6 +63,10 @@
     float: none;
   }
 }
+.reverse {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
 footer {
   background-color: #060607;
   color: #949699;
@@ -86,10 +76,6 @@ footer {
 footer p {
   text-align: center;
   margin: 0px auto;
-}
-footer .reverse {
-  unicode-bidi: bidi-override;
-  direction: rtl;
 }
 footer div .text-left .text-center .text-right {
   text-align: center;

@@ -15,17 +15,23 @@ body {
     -webkit-text-shadow: -4px 4px 5px   rgba(0, 0, 0, 0.5);
     text-shadow: -4px 4px 5px  rgba(0, 0, 0, 0.5);
 
+    a {
+        color: @brand-warning;
+    }
 
     a.btn {
         -webkit-text-shadow: none;
         text-shadow: none;
-        .box-shadow(-4px 4px 5px rgba(0,0,0,.5));        
+        .box-shadow(-4px 4px 5px rgba(0,0,0,.5));   
+        color: @btn-success-color;     
     }
 
     a.btn:hover {
         .box-shadow(-6px 6px 10px rgba(0,0,0,0.7));  
     }
 }
+
+
 
 .highlight:hover
 {
@@ -76,6 +82,11 @@ body {
     }
 }
 
+    .reverse {
+        unicode-bidi: bidi-override;
+        direction: rtl;
+    }
+
 
 footer {
     background-color: @navbar-inverse-bg;
@@ -88,10 +99,7 @@ footer {
         margin: 0px auto;
     }
 
-    .reverse {
-        unicode-bidi: bidi-override;
-        direction: rtl;
-    }
+
 
     div {
         .text-left .text-center .text-right {
