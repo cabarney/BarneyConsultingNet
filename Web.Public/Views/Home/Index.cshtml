@@ -1,5 +1,5 @@
 ﻿@{
-    ViewBag.Title = "Bootstrap";
+    ViewBag.Title = "Barney Consulting";
 }
 
 @section jumbotron
@@ -11,7 +11,8 @@
         <div class="col-md-7">
             <h1>Barney Consulting</h1>
             <p>Expert software development for your business or startup.  Whether your project is big or small, new or legacy, web or desktop, I have the skillset to help you get it finished.</p>
-            <p><a class="btn btn-success btn-lg" href="@Url.Action("Index", "Services")">See what services I can offer</a></p>
+            <p>Check out all the @Html.ActionLink("services I provide",Index","Services") and let me know how I can help.</p>
+            <p><a class="btn btn-success btn-lg" href="@Url.Action("Contact", "Home")">Contact me to get started</a></p>
         </div>
     </div>
 }

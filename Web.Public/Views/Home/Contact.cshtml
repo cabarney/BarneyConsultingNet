@@ -1,0 +1,41 @@
+@{
+    ViewBag.Title = "Contact Barney Consulting";
+}
+
+@section jumbotron
+{
+    <div class="row">
+        <div class="col-md-5">
+            <img class="img-thumbnail" src="@Url.Content("~/assets/img/jumbotron-logo.jpg")" alt="Barney Consulting" />
+        </div>
+        <div class="col-md-7">
+            <h1>Contact Me</h1>
+            <p>
+                Software is a powerful tool.  In the right hands, it can make your business more efficient, attract and retain customers, and more.
+            </p>
+            <p>Send me an email or give me a call and tell me how I can help <em>you</em> do what you do better.</p>
+            <p><a class="btn btn-success btn-lg" href="@Url.Action("Contact", "Home")">Email me!/a></p>
+        </div>
+    </div>
+}
+
+
+<div class="page-header">
+    <h1>Contact Information</h1>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <h2>Barney Consulting</h2>
+        <p>7430 Union Hill Circle</br/>Lincoln, NE 68516</p>
+        <p><a tel:"402-770-2416">(402) 770-2416</a><br/>
+        <a mailto:"adam@barneyconsulting.net">adam@barneyconsulting.net</a></p>
+    </div>
+    <div class="col-md-6">
+    <h2>Adam Barney</h2>
+    <p>To learn more about me, visit my personal site:</p>
+
+    <p><a href="http://adambarney.com">Adam Barney's Blog and Personal Information</a></p>
+    </div>
+</div>
+
