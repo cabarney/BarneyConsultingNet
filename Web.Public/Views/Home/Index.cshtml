@@ -1,7 +1,6 @@
 ﻿@{
     ViewBag.Title = "Barney Consulting";
 }
-
 @section jumbotron
 {
     <div class="row">
@@ -11,19 +10,17 @@
         <div class="col-md-7">
             <h1>Barney Consulting</h1>
             <p>Expert software development for your business or startup.  Whether your project is big or small, new or legacy, web or desktop, I have the skillset to help you get it finished.</p>
-            <p>Check out all the @Html.ActionLink("services I provide",Index","Services") and let me know how I can help.</p>
+            <p>Check out all the @Html.ActionLink("services I provide", "Index", "Services") and let me know how I can help.</p>
             <p><a class="btn btn-success btn-lg" href="@Url.Action("Contact", "Home")">Contact me to get started</a></p>
         </div>
     </div>
 }
 
-
 <div class="page-header">
-    <h1>Featured Services <br/><small>Here are just a few of the many services I can provide for your business.  Check out @Html.ActionLink("my services page", "Index", "services") for a complete listing.</small></h1>
+    <h1>Featured Services</h1>
+    <p>Here are just a few of the many services I can provide for your business.  Check out @Html.ActionLink("my services page", "Index", "services") for a complete listing.</small></h1>
 </div>
-
 <div class="row">
-
     <div class="col-md-4">
         <div class="thumbnail">
             <img src="~/assets/img/web.jpg" />
@@ -39,7 +36,6 @@
             <img src="~/assets/img/startups.jpg" />
             <div class="caption">
                 <h2>Startups</h2>
-
                 <p>We all have that next great idea - the one that wil make us <em>millions</em>. So why do 90% of tech startups fail? To be successful, you need working software and a good marketing strategy (among other things). I&#39;ve got the software handled. Let&#39;s talk.</p>
                 <p><a class="btn btn-primary" href="~/Services/Startups">Learn More &raquo;</a></p>
             </div>
@@ -56,4 +52,3 @@
         </div>
     </div>
 </div>
-
